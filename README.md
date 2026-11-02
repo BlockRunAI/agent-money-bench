@@ -3,7 +3,8 @@
 <p align="center">
   <strong>Agent Money Benchmark</strong><br>
   A benchmark for AI agents operating with real money.<br>
-  <a href="https://agentmoneybench.com">agentmoneybench.com</a>
+  <a href="https://agentmoneybench.com">agentmoneybench.com</a> &nbsp;·&nbsp;
+  <a href="https://huggingface.co/datasets/BlockRunAI/agent-money-bench">Hugging Face</a>
 </p>
 
 <p align="center">
@@ -92,7 +93,7 @@ Adversarial Marketplace tasks are grouped by their primary challenge; every grou
 
 ## Task examples
 
-These eight examples include the full queries, data-purchase budgets, and output requirements. In the Markdown file, each example also shows a payment trace: two evaluated models side by side, or one where all ten passed the same way. Financial Research (Paid Data) examples link every payment to its on-chain transaction. They are also available in **[Markdown](examples/queries.md)** and **[JSONL](examples/queries.jsonl)**.
+These eight examples include the full queries, data-purchase budgets, and output requirements. In the Markdown file, each example also shows a payment trace: two evaluated models side by side, or one where all ten passed the same way. Financial Research (Paid Data) examples link every payment to its on-chain transaction. Browse the examples on **[Hugging Face](https://huggingface.co/datasets/BlockRunAI/agent-money-bench)** or view them in **[Markdown](examples/queries.md)** and **[JSONL](examples/queries.jsonl)**.
 
 ### Financial Research (Paid Data)
 
@@ -146,6 +147,7 @@ Third-party provider icons retain their [existing license and attribution](asset
   <strong>Agent Money Benchmark</strong><br>
   <a href="results/README.md">Model results</a> ·
   <a href="examples/queries.md">Task examples</a> ·
+  <a href="https://huggingface.co/datasets/BlockRunAI/agent-money-bench">Hugging Face</a> ·
   <a href="docs/metrics.md">Evaluation metrics</a> ·
   <a href="LICENSE">License</a> ·
   <a href="mailto:research@blockrun.ai">Contact</a>
