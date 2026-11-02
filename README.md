@@ -2,7 +2,8 @@
 
 <p align="center">
   <strong>Agent Money Benchmark</strong><br>
-  A benchmark for AI agents operating with real money.
+  A benchmark for AI agents operating with real money.<br>
+  <a href="https://agentmoneybench.com">agentmoneybench.com</a>
 </p>
 
 <p align="center">
