@@ -1,4 +1,4 @@
-<h1 align="center">We gave 10 frontier AI models wallets.<br>7 got scammed at least once.</h1>
+<h1 align="center">We gave 12 frontier AI models wallets.<br>9 got scammed at least once.</h1>
 
 <p align="center">
   <strong>Agent Money Benchmark</strong><br>
@@ -8,7 +8,7 @@
 </p>
 
 <p align="center">
-  <a href="#give-an-agent-100-and-at-least-25-of-it-is-wasted">Wasted spend</a> &nbsp;·&nbsp;
+  <a href="#wasted-spend-per-100">Wasted spend</a> &nbsp;·&nbsp;
   <a href="#model-performance">Model performance</a> &nbsp;·&nbsp;
   <a href="#why-agent-money-bench">Why Agent Money Bench</a> &nbsp;·&nbsp;
   <a href="#task-categories">Task categories</a> &nbsp;·&nbsp;
@@ -18,26 +18,28 @@
 
 People and businesses are delegating more financial decisions to AI agents: buying data and services, paying vendors, and spending within a budget on someone else's behalf. Anthropic's [S-1](https://www.sec.gov/Archives/edgar/data/2130357/000162828026067168/anthropicpbc-sx1.htm) warns that when agents are "completing financial transactions," errors can have consequences "difficult or impossible to reverse." Agent Money Benchmark measures whether an agent can be trusted with that delegation: frontier models complete tasks by paying sellers with real money, and some of the sellers cheat. Payments settle on-chain in USDC, a dollar stablecoin (1 USDC = $1), so every one can be graded from the settlement record.
 
-Across all traps, **7 of the 10 models paid a cheating seller at least once**, and 6 paid twice for the same data ([by trap type](results/README.md#scams-by-trap-type)), including Claude Sonnet 5.5 and Claude Fable 5.1. Only GPT-6 Astra, GPT-6.1 Sol and Claude Opus 5.5 were never caught.
+Across all traps, **9 of the 12 models paid a cheating seller at least once**, and 7 paid twice for the same data ([by trap type](results/README.md#scams-by-trap-type)), including Claude Sonnet 5.5 and Claude Fable 5.1. Only GPT-6 Astra, GPT-6.1 Sol and Claude Opus 5.5 were never caught.
 
-## Give an agent $100, and at least $25 of it is wasted
+## Wasted spend per $100
 
-**Give an AI agent $100 to spend. How much will it waste?** Normalized so that each track counts half, the best agents waste $25–38 of every $100 on tasks they fail or pay for wrongly; the weakest waste $56–71. Version 1, one run per task.
+**Give an AI agent $100 to spend. How much will it waste?** With each task category weighted equally, normalized wasted spend ranges from $21.0 to $70.8 per $100 across 12 models. Version 1, one run per task.
 
-[![Wasted spend per $100 for 10 models in two tiers, each bar split into what Adversarial Marketplace and Financial Research add, with 95% intervals](assets/wasted-spend.png)](assets/wasted-spend.png)
+[![Wasted spend per $100 for 12 models, split into money loss and value loss, with 95% intervals](assets/wasted-spend.png)](assets/wasted-spend.png)
 
 | Tier | Model | Normalized<br>wasted&nbsp;/&nbsp;$100&nbsp;↓ | 95% CI | Money<br>loss | Value<br>loss | Actual<br>wasted&nbsp;/&nbsp;spent |
 |:---:|:---|---:|---:|---:|---:|---:|
-| 1 | <img src="assets/providers/anthropic.svg" alt="Anthropic" width="20" height="20">&nbsp;Claude&nbsp;Opus&nbsp;5.5 | **$25.0** | $18.7&#8288;–&#8288;31.2 | $0.0 | $25.0 | 25.9% |
-| 1 | <img src="assets/providers/openai.svg" alt="OpenAI" width="20" height="20">&nbsp;GPT-6.1&nbsp;Sol | **$27.9** | $9.5&#8288;–&#8288;39.2 | $0.0 | $27.9 | 34.9% |
-| 1 | <img src="assets/providers/openai.svg" alt="OpenAI" width="20" height="20">&nbsp;GPT-6&nbsp;Astra | **$33.3** | $15.3&#8288;–&#8288;42.4 | $0.0 | $33.3 | 46.7% |
-| 1 | <img src="assets/providers/google.svg" alt="Google" width="20" height="20">&nbsp;Gemini&nbsp;4&nbsp;Argon | **$34.3** | $25.0&#8288;–&#8288;42.1 | $0.0 | $34.3 | 57.0% |
-| 1 | <img src="assets/providers/anthropic.svg" alt="Anthropic" width="20" height="20">&nbsp;Claude&nbsp;Fable&nbsp;5.1 | **$37.9** | $25.5&#8288;–&#8288;48.6 | $6.3 | $31.6 | 39.6% |
-| 2 | <img src="assets/providers/anthropic.svg" alt="Anthropic" width="20" height="20">&nbsp;Claude&nbsp;Sonnet&nbsp;5.5 | **$56.3** | $46.2&#8288;–&#8288;65.1 | $15.3 | $40.9 | 55.6% |
-| 2 | <img src="assets/providers/zai.svg" alt="Z.ai" width="20" height="20">&nbsp;GLM&nbsp;5.3 | **$58.3** | $48.0&#8288;–&#8288;66.9 | $20.0 | $38.2 | 65.7% |
-| 2 | <img src="assets/providers/deepseek.svg" alt="DeepSeek" width="20" height="20">&nbsp;DeepSeek&nbsp;V4&nbsp;Pro | **$65.3** | $55.0&#8288;–&#8288;73.6 | $27.0 | $38.2 | 66.9% |
-| 2 | <img src="assets/providers/moonshot.svg" alt="Moonshot" width="20" height="20">&nbsp;Kimi&nbsp;K3.1&nbsp;Pro | **$66.3** | $57.6&#8288;–&#8288;74.1 | $19.9 | $46.4 | 83.2% |
-| 2 | <img src="assets/providers/openai.svg" alt="OpenAI" width="20" height="20">&nbsp;GPT-6&nbsp;Luna | **$71.0** | $63.9&#8288;–&#8288;77.6 | $25.2 | $45.8 | 73.5% |
+| 1 | <img src="assets/providers/anthropic.svg" alt="Anthropic" width="20" height="20">&nbsp;Claude&nbsp;Fable&nbsp;5.2 | **$21.0** | $12.5&#8288;–&#8288;29.4 | $0.0 | $21.0 | 24.4% |
+| 1 | <img src="assets/providers/openai.svg" alt="OpenAI" width="20" height="20">&nbsp;GPT-6.1&nbsp;Sol | **$24.6** | $9.4&#8288;–&#8288;35.9 | $0.0 | $24.6 | 25.2% |
+| 1 | <img src="assets/providers/anthropic.svg" alt="Anthropic" width="20" height="20">&nbsp;Claude&nbsp;Opus&nbsp;5.5 | **$26.2** | $19.3&#8288;–&#8288;32.8 | $0.0 | $26.2 | 20.2% |
+| 1 | <img src="assets/providers/openai.svg" alt="OpenAI" width="20" height="20">&nbsp;GPT-6&nbsp;Astra | **$32.9** | $15.0&#8288;–&#8288;42.3 | $0.0 | $32.9 | 35.6% |
+| 1 | <img src="assets/providers/google.svg" alt="Google" width="20" height="20">&nbsp;Gemini&nbsp;4&nbsp;Argon | **$33.9** | $24.7&#8288;–&#8288;41.8 | $0.0 | $33.9 | 55.5% |
+| 1 | <img src="assets/providers/anthropic.svg" alt="Anthropic" width="20" height="20">&nbsp;Claude&nbsp;Fable&nbsp;5.1 | **$37.7** | $25.4&#8288;–&#8288;48.7 | $6.3 | $31.4 | 38.8% |
+| 2 | <img src="assets/providers/anthropic.svg" alt="Anthropic" width="20" height="20">&nbsp;Claude&nbsp;Sonnet&nbsp;5.5 | **$58.4** | $47.8&#8288;–&#8288;67.2 | $15.3 | $43.0 | 56.1% |
+| 2 | <img src="assets/providers/reflection.svg" alt="Reflection" width="20" height="20">&nbsp;Beam&nbsp;1.0 | **$58.7** | $49.5&#8288;–&#8288;66.9 | $12.2 | $46.4 | 59.1% |
+| 2 | <img src="assets/providers/zai.svg" alt="Z.ai" width="20" height="20">&nbsp;GLM&nbsp;5.3 | **$58.9** | $48.9&#8288;–&#8288;67.6 | $20.0 | $38.9 | 64.2% |
+| 2 | <img src="assets/providers/deepseek.svg" alt="DeepSeek" width="20" height="20">&nbsp;DeepSeek&nbsp;V4&nbsp;Pro | **$65.6** | $55.4&#8288;–&#8288;73.9 | $27.0 | $38.6 | 66.9% |
+| 2 | <img src="assets/providers/moonshot.svg" alt="Moonshot" width="20" height="20">&nbsp;Kimi&nbsp;K3.1&nbsp;Pro | **$66.4** | $57.8&#8288;–&#8288;74.2 | $19.9 | $46.5 | 82.0% |
+| 2 | <img src="assets/providers/openai.svg" alt="OpenAI" width="20" height="20">&nbsp;GPT-6&nbsp;Luna | **$70.8** | $63.8&#8288;–&#8288;77.4 | $25.2 | $45.6 | 73.9% |
 
 Each track counts as $50 of the $100. Money loss is the whole cost of Adversarial Marketplace tasks with a payment error (a raised price, an expired quote, paying twice, going over budget), even when the answer was right; value loss is spend on every other failed task and on the rubric shortfall of Financial Research answers. Actual wasted / spent pools both tracks without the weighting. Tiers group models whose 95% intervals overlap the leader's. [Rules, method and dollar amounts →](results/README.md#wasted-spend)
 
@@ -93,7 +95,7 @@ Adversarial Marketplace tasks are grouped by their primary challenge; every grou
 
 ## Task examples
 
-These eight examples include the full queries, data-purchase budgets, and output requirements. In the Markdown file, each example also shows a payment trace: two evaluated models side by side, or one where all ten passed the same way. Financial Research (Paid Data) examples link every payment to its on-chain transaction. Browse the examples on **[Hugging Face](https://huggingface.co/datasets/BlockRunAI/agent-money-bench)** or view them in **[Markdown](examples/queries.md)** and **[JSONL](examples/queries.jsonl)**.
+These eight examples include the full queries, data-purchase budgets, and output requirements. In the Markdown file, each example also shows a payment trace: two evaluated models side by side, or one illustrative trace where all 12 models made the same four purchases. Financial Research (Paid Data) examples link every payment to its on-chain transaction. Browse the examples on **[Hugging Face](https://huggingface.co/datasets/BlockRunAI/agent-money-bench)** or view them in **[Markdown](examples/queries.md)** and **[JSONL](examples/queries.jsonl)**.
 
 ### Financial Research (Paid Data)
 

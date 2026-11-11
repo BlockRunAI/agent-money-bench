@@ -1,6 +1,6 @@
 # Provider icon attribution
 
-The six provider icons used in the model results are sourced from [Lobe Icons](https://github.com/lobehub/lobe-icons/tree/8b7bbc433d38437fa2b0cca58ae896917162b812), under the MIT License. Each original mark is placed on a neutral background for readability in light and dark GitHub themes.
+The following provider icons are sourced from [Lobe Icons](https://github.com/lobehub/lobe-icons/tree/8b7bbc433d38437fa2b0cca58ae896917162b812), under the MIT License. Each original mark is placed on a neutral background for readability in light and dark GitHub themes.
 
 | Provider | Original asset |
 |---|---|
@@ -32,3 +32,5 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+The Reflection symbol is from Reflection’s official brand kit and remains the property of Reflection.

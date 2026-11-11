@@ -18,7 +18,7 @@ These metrics describe model performance, with results reported by task category
 
 Answer quality summarizes the quality of the agent's response. It is graded by people with AI assistance, against a rubric written for each task (see [grading process](#grading-process)). Task success counts an answer as successful only when it passes every gate (for example, examining the right market, with no made-up data), meets every essential item (for example, reporting the move's size and timing from fetched data), and triggers no pitfall (for example, citing news published after the move). Answer quality gives partial credit for the items met and is 0 when a gate fails.
 
-Cost per task combines recorded data-purchase costs and reported model-usage costs in USD, using 1 USDC = 1 USD for USDC purchases. The results table also shows the two cost components separately. Cost is reported alongside answer quality.
+Cost per task combines recorded data-purchase costs and model inference valued at listed input and output token prices in USD, using 1 USDC = 1 USD for USDC purchases. The results table also shows the two cost components separately. Cost is reported alongside answer quality.
 
 ### Grading process
 

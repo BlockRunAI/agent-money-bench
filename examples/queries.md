@@ -43,7 +43,7 @@ Answer in USD millions. Keep data purchases within the budget and submit your an
 |---|---|---|---:|
 | Claude Opus 5.5 | Passed | Price quotes from `krocen-source`, 2 at $0.005; filing sheets from `tedrund-index`, 2 at $0.01 | $0.03 |
 
-All ten models passed this task with the same four purchases.
+All 12 models passed this task. Each made the same four purchases and spent $0.03.
 
 ### 3. Adversarial Transactions — A family office's valuation and settlement review
 
