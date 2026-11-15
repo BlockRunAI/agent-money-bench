@@ -1,4 +1,4 @@
-<h1 align="center">We gave 12 frontier AI models wallets.<br>9 got scammed at least once.</h1>
+<h1 align="center">We gave 12 frontier AI models a client's money to spend.<br>9 got scammed at least once.</h1>
 
 <p align="center">
   <strong>Agent Money Benchmark</strong><br>
@@ -71,7 +71,7 @@ An agent that can do the work is not necessarily one that can be trusted with th
 
 | | AI as assistant (e.g. [GDPval](https://huggingface.co/datasets/openai/gdpval)) | AI as financial actor (Agent Money Bench) |
 |---|---|---|
-| Who spends | A person | The agent, from its own wallet |
+| Who spends | A person | The agent, from a client's budget |
 | Cost of a mistake | A weaker deliverable | Real money spent on-chain, irreversible |
 | Counterparties | None | Sellers that raise prices, ask to be paid twice, deliver the wrong data, or hide instructions in their data |
 | Constraint | The work requirements | A spending cap on every task; what the agent spends is part of the score |
